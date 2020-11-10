@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+h1{
+    color: black;
+    background-color: rgb(172, 98, 187);
+    opacity: 0.3;
+    text-align: center;
+    box-shadow: -1px 1px 1px rgba(0,0,0,.1);
+    transition: .3s linear;
+
+}
+
+.image-style{
+
+    text-align: center;
+
+}
+
+
+
