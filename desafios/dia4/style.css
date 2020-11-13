@@ -1,0 +1,52 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn 
+{
+    width: 200px;
+    height: 60px;
+    background: none;
+    border: 4px double;
+    color: rgb(247, 139, 157);
+    font-weight: 700;
+    cursor: none;
+    font-size: 16px;
+    position: relative;
+}
+
+.btn::before, .btn::after
+{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 4px;
+    background: #010203;
+    transform: skewX(-50deg);
+    transition: .5s linear;
+}
+.btn::before
+{
+    top: -4px;
+    left: 5%;
+}
+.btn::after
+{
+    bottom: -4px;
+    right: 5%;
+  
+}
+.btn:hover::before
+{
+    left: 85%;
+}
+.btn:hover::after
+{
+    right: 85%;
+}
