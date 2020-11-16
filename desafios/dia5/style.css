@@ -1,0 +1,54 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}  
+.pulse
+  {
+      width: 100px;
+      height: 100px;
+      background: #c980ad;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 20px;
+      text-align: center;
+      line-height: 100px;
+      animation-direction: alternate;
+      animation: animate 3s linear infinite;     
+
+      text-align: center;
+  }
+
+
+ 
+  @keyframes animate
+{
+    0%
+    {
+        box-shadow: 0 0 0 0 rgba(209, 55, 158, 0.7), 0 0 0 0 rgba(240, 70, 203, 0.7);
+    }
+    40%
+    {
+        box-shadow: 0 0 0 50px rgba(55, 209, 201, 0), 0 0 0 0 rgba(218, 89, 179, 0.7);
+    }
+    80%
+    {
+        box-shadow: 0 0 0 50px rgba(55, 209, 201, 0), 0 0 0 30px rgba(55, 209, 201, 0);
+    }
+    100%
+    {
+        box-shadow: 0 0 0 0 rgba(55, 209, 201, 0), 0 0 0 30px rgba(55, 209, 201, 0);
+    }
+}
